@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <title>How to Make a JQuery Slider</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        
+        <style>
+            h1 {
+                margin-top: 40px;
+                font-family: 'Poiret One', cursive;
+                font-size: 40px;
+            }
+        </style>
+        
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+
+        <!-- the preceding IE 9 code is to support old browsers. Leave it be -->
+</head>
+
+<body>
+
+    <header>
+        <h1>How to Make a JQuery Slider</h1>
+    </header>
+        
+    <div id="wrapper">
+        <div id="content1" class="content"><img src="images/slide1.png"></div>
+        <div id="content2" class="content"><img src="images/slide2.png"></div>
+        <div id="content3" class="content"><img src="images/slide3.png"></div>
+        <div id="content4" class="content"><img src="images/slide4.png"></div>
+        <div id="content5" class="content"><img src="images/slide5.png"></div>
+    </div>
+        
+    <div id="individualNav">
+        <ul id="individualNav">
+            <li><div onclick="button(this);" id="button1" class="button">1</div></li>
+            <li><div onclick="button(this);" id="button2" class="button">2</div></li>
+            <li><div onclick="button(this);" id="button3" class="button">3</div></li>
+            <li><div onclick="button(this);" id="button4" class="button">4</div></li>
+            <li><div onclick="button(this);" id="button5" class="button">5</div></li>
+        </ul>
+    </div>
+
+    <div id="prevNextNav">
+        <ul>
+            <li><div onclick="previousButton();" id="previousButton" class="button">&#9664;</div></li>
+            <li><div onclick="nextButton();" id="nextButton" class="button">&#9654;</div></li>
+        </ul>
+    </div>
+    
+    <div id="credit">
+        <p>Photos are licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a> and were found on <a href="https://unsplash.com">Unsplash</a>.</p>
+    </div>
+        
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
